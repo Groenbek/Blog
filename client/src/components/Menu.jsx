@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Home = () => {
-  const post = [
+const Menu = () => {
+  const posts = [
     {
       id: 1,
       title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
@@ -28,26 +27,19 @@ const Home = () => {
       img: "https://images.pexels.com/photos/6157049/pexels-photo-6157049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
   ];
+
   return (
-    <div className="home">
-      <div className="posts">
-        {post.map((post) => (
-          <div className="post" key={post.id}>
-            <div className="img">
-              <img src={post.img} alt="" />
-            </div>
-            <div className="content">
-              <Link className="link" to={`/post/${post.id}`}>
-                <h1>{post.title}</h1>
-              </Link>
-              <p>{post.desc}</p>
-              <button>Read more</button>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="menu">
+      <h1>Other posts you may like</h1>
+      {posts.map((post) => (
+        <div className="post" key={post.id}>
+          <img src={post.img} alt="" />
+          <h2>{post.title}</h2>
+          <button>Read More</button>
+        </div>
+      ))}
     </div>
   );
 };
 
-export default Home;
+export default Menu;
