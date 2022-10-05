@@ -4,27 +4,28 @@ const Menu = () => {
   const posts = [
     {
       id: 1,
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      title: "Shrek and Lord Farquaard would have been a better couple",
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-      img: "https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      img: "https://cdn.vox-cdn.com/thumbor/G-1NflyTguj-celipDJWBkGmJ3E=/0x0:3000x2000/1200x675/filters:focal(1230x515:1710x995)/cdn.vox-cdn.com/uploads/chorus_image/image/69303818/Shrek2.0.jpg",
     },
     {
       id: 2,
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      title: "Felt cute, might delete later",
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-      img: "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      img: "https://preview.redd.it/f4hxtei3qyv11.jpg?auto=webp&s=65490146a3a0a06e11525a35e091642cdf8e1c7f",
     },
     {
       id: 3,
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      title: "Isn't ketchup not just a smoothie? Welcome to my Ted Talk",
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-      img: "https://images.pexels.com/photos/4230630/pexels-photo-4230630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      img: "https://m.media-amazon.com/images/I/812qaP39CfL._SL1500_.jpg",
     },
     {
       id: 4,
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      title:
+        "How do yall feel about the new Tesla? I think it's straight buzzin!",
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-      img: "https://images.pexels.com/photos/6157049/pexels-photo-6157049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      img: "https://www.moneyshake.com/shaking-news/wp-content/uploads/2021/02/030f386b099ceddc89cede381620f58eee2cf568.jpeg",
     },
   ];
 
