@@ -1,0 +1,10 @@
+DELIMITER //
+
+CREATE PROCEDURE GetAllPosts()
+BEGIN
+	SELECT * FROM posts;
+END//
+
+DELIMITER ;
+
+CALL GetAllPosts();

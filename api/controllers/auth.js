@@ -1,12 +1,11 @@
-import {db} from '../db.js'
-import bcrypt from "bcryptjs"
-import jwt from "jsonwebtoken"
+import { db } from "../db.js";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
 
 export const register = (req, res) => {
-    
-// check if we have the user
+  // check if we have the user
 
-const q = "SELECT * FROM users WHERE email = ? OR username = ?";
+  const q = "SELECT * FROM users WHERE email = ? OR username = ?";
 
   db.query(q, [req.body.email, req.body.username], (err, data) => {
     if (err) return res.status(500).json(err);
@@ -21,15 +20,14 @@ const q = "SELECT * FROM users WHERE email = ? OR username = ?";
 
     db.query(q, [values], (err, data) => {
       if (err) return res.status(500).json(err);
-      return res.status(200).json("User has been created.");    
+      return res.status(200).json("User has been created.");
     });
   });
 };
 export const login = (req, res) => {
+  // check user
 
-    // cehck user
-
-    const q = "SELECT * FROM users WHERE username = ?";
+  const q = "SELECT * FROM users WHERE username = ?";
 
   db.query(q, [req.body.username], (err, data) => {
     if (err) return res.status(500).json(err);
@@ -56,8 +54,11 @@ export const login = (req, res) => {
   });
 };
 export const logout = (req, res) => {
-    res.clearCookie("access_token",{
-      sameSite:"none",
-      secure:true
-    }).status(200).json("User has been logged out.")
-  };
+  res
+    .clearCookie("access_token", {
+      sameSite: "none",
+      secure: true,
+    })
+    .status(200)
+    .json("User has been logged out.");
+};
