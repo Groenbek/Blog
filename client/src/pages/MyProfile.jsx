@@ -17,7 +17,7 @@ const MyProfile = () => {
 };
 
 export default MyProfile;
-{
+
   /* <div> {currentUser.username === post.username && (
     <div className="edit">
       <Link to={`/write?edit=2`} state={post}>
@@ -26,4 +26,3 @@ export default MyProfile;
       <img onClick={handleDelete} src={Delete} alt="" />
     </div>
 </div> */
-}
