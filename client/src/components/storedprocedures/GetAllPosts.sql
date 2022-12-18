@@ -1,10 +1,6 @@
-DELIMITER //
-
-CREATE PROCEDURE GetAllPosts()
+DELIMITER $$
+CREATE PROCEDURE get_all_posts()
 BEGIN
-	SELECT * FROM posts;
-END//
-
+  SELECT * FROM posts;
+END $$
 DELIMITER ;
-
-CALL GetAllPosts();

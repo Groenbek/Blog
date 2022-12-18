@@ -96,24 +96,24 @@ const Write = () => {
           <div className="cat">
             <input
               type="radio"
-              checked={cat === "art"}
+              checked={cat === "beer"}
               name="cat"
-              value="art"
-              id="art"
+              value="beer"
+              id="beer"
               onChange={(e) => setCat(e.target.value)}
             />
-            <label htmlFor="art">Art</label>
+            <label htmlFor="beer">Beer</label>
           </div>
           <div className="cat">
             <input
               type="radio"
-              checked={cat === "science"}
+              checked={cat === "stackoverflow"}
               name="cat"
-              value="science"
-              id="science"
+              value="stackoverflow"
+              id="stackoverflow"
               onChange={(e) => setCat(e.target.value)}
             />
-            <label htmlFor="science">Science</label>
+            <label htmlFor="stackoverflow">Stackoverflow</label>
           </div>
           <div className="cat">
             <input
@@ -129,24 +129,24 @@ const Write = () => {
           <div className="cat">
             <input
               type="radio"
-              checked={cat === "cinema"}
+              checked={cat === "music"}
               name="cat"
-              value="cinema"
-              id="cinema"
+              value="music"
+              id="music"
               onChange={(e) => setCat(e.target.value)}
             />
-            <label htmlFor="cinema">Cinema</label>
+            <label htmlFor="music">Music</label>
           </div>
           <div className="cat">
             <input
               type="radio"
-              checked={cat === "design"}
+              checked={cat === "football"}
               name="cat"
-              value="design"
-              id="design"
+              value="football"
+              id="football"
               onChange={(e) => setCat(e.target.value)}
             />
-            <label htmlFor="design">Design</label>
+            <label htmlFor="football">Football</label>
           </div>
           <div className="cat">
             <input
